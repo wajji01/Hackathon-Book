@@ -1,55 +1,41 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: N/A → 1.0.0
+Modified principles: None (new constitution)
+Added sections: All principles and sections (new constitution)
+Removed sections: None
+Templates requiring updates: ✅ plan-template.md (already references constitution checks), ✅ spec-template.md (aligns with requirements), ✅ tasks-template.md (aligns with task organization)
+Follow-up TODOs: None
+-->
+# AI-Spec-Driven Technical Book with Embedded RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Spec-First, AI-Native Development
+All development starts with clear specifications; AI tools (Claude Code, Spec-Kit Plus) drive content and structure; Requirements are precise and testable before implementation
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Technical Accuracy (Official Docs Only)
+All technical content must be based on official documentation only; No hallucinated APIs or features; All code examples must be verified and runnable
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Clarity for Developers and CS Students
+Content must be clear and accessible to both practicing developers and computer science students; Explanations should be intermediate+ level with sufficient detail for understanding
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Reproducibility and Deployable Results
+All code examples and setups must be reproducible from scratch; Deployments must be successful and verifiable; Full-book queries and selected-text-only queries with source references must work
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Spec-Driven, AI-Assisted Implementation
+Use Spec-Kit Plus to drive all content and structure; Claude Code for coding and spec alignment; Maintain tight coupling between specs and implementation
 
-### [PRINCIPLE_6_NAME]
+### Stable, Current SDK Versions Only
+Use only stable, current SDK versions; Avoid experimental or beta features that may break reproducibility; Verify compatibility across all components
 
+## Technical Stack and Deployment Standards
+Book authored with Docusaurus; Deploy to GitHub Pages; Embedded RAG chatbot using OpenAI Agents/ChatKit SDKs, FastAPI backend, Neon Serverless Postgres, Qdrant Cloud (Free Tier)
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow and Quality Assurance
+All code must be runnable and verified; No hallucinated APIs or features; Developer-level writing (intermediate+); Strict adherence to official documentation
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Constitution supersedes all other practices; Amendments require documentation and approval; All implementations must comply with core principles; Use official documentation as the authoritative source
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-21 | **Last Amended**: 2025-12-21
