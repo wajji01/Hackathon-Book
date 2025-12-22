@@ -1,0 +1,18 @@
+.importantNoteTitle {
+  color: var(--edu-robotics-red);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.importantNoteTitle::before {
+  content: "⚠️";
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.importantNoteContent {
+  margin-top: 0.5rem;
+}
