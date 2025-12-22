@@ -1,0 +1,10 @@
+.learningObjectiveTitle {
+  color: var(--edu-robotics-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.learningObjectiveContent {
+  margin-top: 0.5rem;
+}

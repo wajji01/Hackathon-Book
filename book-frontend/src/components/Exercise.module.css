@@ -1,0 +1,57 @@
+.exercise {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.exerciseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.exerciseTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--edu-robotics-green);
+}
+
+.difficultyBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.difficulty-beginner {
+  background-color: rgba(52, 168, 83, 0.1);
+  color: var(--edu-robotics-green);
+  border: 1px solid var(--edu-robotics-green);
+}
+
+.difficulty-intermediate {
+  background-color: rgba(251, 188, 4, 0.1);
+  color: var(--edu-robotics-yellow);
+  border: 1px solid var(--edu-robotics-yellow);
+}
+
+.difficulty-advanced {
+  background-color: rgba(234, 67, 53, 0.1);
+  color: var(--edu-robotics-red);
+  border: 1px solid var(--edu-robotics-red);
+}
+
+.exerciseContent {
+  margin-top: 1rem;
+}
+
+.exerciseContent > *:first-child {
+  margin-top: 0;
+}
+
+.exerciseContent > *:last-child {
+  margin-bottom: 0;
+}

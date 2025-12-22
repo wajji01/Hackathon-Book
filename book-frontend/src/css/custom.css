@@ -1,0 +1,102 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Educational content specific variables */
+  --edu-robotics-blue: #1a73e8;
+  --edu-robotics-light-blue: #e8f0fe;
+  --edu-robotics-green: #34a853;
+  --edu-robotics-yellow: #fbbc04;
+  --edu-robotics-red: #ea4335;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Dark mode educational content variables */
+  --edu-robotics-blue: #8ab4f8;
+  --edu-robotics-light-blue: #1b2a4e;
+  --edu-robotics-green: #5bb974;
+  --edu-robotics-yellow: #f2d05e;
+  --edu-robotics-red: #ea6a5d;
+}
+
+/* Educational content specific styles */
+.educational-content {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-left: 4px solid var(--edu-robotics-blue);
+  background-color: rgba(26, 115, 232, 0.05);
+  border-radius: 0 4px 4px 0;
+}
+
+.learning-objective {
+  background-color: var(--edu-robotics-light-blue);
+  border-left: 4px solid var(--edu-robotics-blue);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.code-example {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.important-note {
+  background-color: rgba(234, 67, 53, 0.1);
+  border-left: 4px solid var(--edu-robotics-red);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Custom styling for robotics diagrams and illustrations */
+.robotics-diagram {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px dashed var(--edu-robotics-blue);
+  background-color: rgba(26, 115, 232, 0.02);
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+/* Custom styling for exercise sections */
+.exercise-section {
+  background-color: rgba(52, 168, 83, 0.05);
+  border: 1px solid var(--edu-robotics-green);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.exercise-title {
+  font-weight: bold;
+  color: var(--edu-robotics-green);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
