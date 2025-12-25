@@ -56,6 +56,24 @@ const sidebars: SidebarsConfig = {
         'module-2/simulated-sensors',
       ],
     },
+    {
+      type: 'category',
+      label: 'Module 3: AI-Robot Brain (NVIDIA Isaac™)',
+      items: [
+        'module-3/isaac-sim',
+        'module-3/isaac-ros',
+        'module-3/nav2-navigation',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action (VLA)',
+      items: [
+        'module-4/voice-to-action',
+        'module-4/cognitive-planning',
+        'module-4/autonomous-humanoid',
+      ],
+    },
   ],
 };
 

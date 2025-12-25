@@ -1,0 +1,124 @@
+# API Contract: AI-Robot Brain Module Documentation Endpoints
+
+## Overview
+This document specifies the API contracts for the AI-Robot Brain Module documentation endpoints. These endpoints serve educational content for AI/CS students with basic ROS 2 knowledge learning about NVIDIA Isaac™ platform.
+
+## Chapter Content Endpoints
+
+### GET /docs/module-3/isaac-sim
+**Purpose**: Serve the Isaac Sim chapter content
+**Description**: Provides educational content about NVIDIA Isaac™ simulation for robotics
+
+#### Request
+- **Method**: GET
+- **Path**: /docs/module-3/isaac-sim
+- **Parameters**: None
+- **Headers**:
+  - Accept: text/html (for rendered page)
+  - Accept: application/json (for API access if available)
+
+#### Response
+- **Status Codes**:
+  - 200: Successfully retrieved the chapter content
+  - 404: Chapter not found
+- **Content-Type**: text/html
+- **Body**: HTML-rendered documentation page with:
+  - Chapter title: "Isaac Sim: GPU-Accelerated Robotics Simulation"
+  - Learning objectives as specified in the chapter document
+  - Content sections on Isaac Sim architecture, GPU-accelerated physics, and sensor simulation
+  - Code examples for implementing simulation in Isaac™
+  - Practical exercises for students
+  - Summary and further reading resources
+
+### GET /docs/module-3/isaac-ros
+**Purpose**: Serve the Isaac ROS chapter content
+**Description**: Provides educational content about Isaac™ ROS integration
+
+#### Request
+- **Method**: GET
+- **Path**: /docs/module-3/isaac-ros
+- **Parameters**: None
+- **Headers**:
+  - Accept: text/html (for rendered page)
+  - Accept: application/json (for API access if available)
+
+#### Response
+- **Status Codes**:
+  - 200: Successfully retrieved the chapter content
+  - 404: Chapter not found
+- **Content-Type**: text/html
+- **Body**: HTML-rendered documentation page with:
+  - Chapter title: "Isaac ROS: Integration with ROS 2 Systems"
+  - Learning objectives as specified in the chapter document
+  - Content sections on Isaac ROS bridges, message translation, and perception modules
+  - Code examples for implementing ROS integration
+  - Practical exercises for students
+  - Summary and further reading resources
+
+### GET /docs/module-3/nav2-navigation
+**Purpose**: Serve the Nav2 Navigation chapter content
+**Description**: Provides educational content about Nav2 navigation with Isaac™ integration
+
+#### Request
+- **Method**: GET
+- **Path**: /docs/module-3/nav2-navigation
+- **Parameters**: None
+- **Headers**:
+  - Accept: text/html (for rendered page)
+  - Accept: application/json (for API access if available)
+
+#### Response
+- **Status Codes**:
+  - 200: Successfully retrieved the chapter content
+  - 404: Chapter not found
+- **Content-Type**: text/html
+- **Body**: HTML-rendered documentation page with:
+  - Chapter title: "Nav2 Navigation: GPU-Accelerated Path Planning"
+  - Learning objectives as specified in the chapter document
+  - Content sections on Nav2 architecture, GPU-accelerated planners, and navigation algorithms
+  - Code examples for implementing navigation systems
+  - Practical exercises for students
+  - Summary and further reading resources
+
+## Navigation Endpoints
+
+### GET /docs/
+**Purpose**: Serve the main documentation page with navigation
+**Description**: Provides the main documentation page with links to all modules including Module 3
+
+#### Request
+- **Method**: GET
+- **Path**: /docs/
+- **Parameters**: None
+- **Headers**:
+  - Accept: text/html
+
+#### Response
+- **Status Codes**:
+  - 200: Successfully retrieved the documentation index
+  - 301: Redirect to default module if configured
+- **Content-Type**: text/html
+- **Body**: HTML-rendered documentation index page with:
+  - Navigation sidebar containing Module 3 category
+  - Links to all three Module 3 chapters
+  - Proper hierarchical organization of content
+
+## Error Responses
+
+### 404 Not Found
+- **Content-Type**: text/html
+- **Body**: Error page with:
+  - Clear message that the requested document was not found
+  - Links back to the main documentation index
+  - Search functionality if available
+
+## Security Considerations
+- All endpoints are publicly accessible for educational purposes
+- No authentication required for documentation access
+- Rate limiting should be implemented to prevent abuse
+- Content is static and does not accept user input that could lead to injection attacks
+
+## Performance Requirements
+- Page load time should be under 2 seconds for all documentation pages
+- All resources should be properly cached
+- Images and other media should be optimized for web delivery

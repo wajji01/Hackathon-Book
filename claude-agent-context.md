@@ -1,4 +1,4 @@
-# Digital Twin Module Development Guidelines
+# AI-Robot Brain Module Development Guidelines
 
 Auto-generated from feature plan. Last updated: 2025-12-25
 
@@ -8,21 +8,38 @@ Auto-generated from feature plan. Last updated: 2025-12-25
 - Markdown for content creation
 - Git for version control
 - GitHub Pages for deployment
-- Gazebo simulation environment
-- Unity 3D engine
-- Robotics simulation tools
+- NVIDIA Isaac™ platform
+- ROS 2 ecosystem
+- Nav2 navigation system
+- GPU-accelerated computing
+- Vision-Language-Action (VLA) systems
+- Multimodal processing techniques
+- LLM-driven cognitive planning
+- Humanoid robot control systems
 
 ## Project Structure
 
 ```text
 .
 ├── docs/
-│   └── module-2/
-│       ├── gazebo-physics.md
-│       ├── unity-environments.md
-│       └── simulated-sensors.md
+│   ├── module-3/
+│   │   ├── isaac-sim.md
+│   │   ├── isaac-ros.md
+│   │   └── nav2-navigation.md
+│   └── module-4/
+│       ├── voice-to-action.md
+│       ├── cognitive-planning.md
+│       └── autonomous-humanoid.md
 ├── specs/
-│   └── 1-digital-twin/
+│   ├── 3-ai-robot-brain/
+│   │   ├── spec.md
+│   │   ├── plan.md
+│   │   ├── research.md
+│   │   ├── data-model.md
+│   │   ├── quickstart.md
+│   │   ├── contracts/
+│   │   └── checklists/
+│   └── 1-vla-module/
 │       ├── spec.md
 │       ├── plan.md
 │       ├── research.md
@@ -49,7 +66,7 @@ npm run build
 npm run serve
 
 # Create new documentation files
-touch docs/module-2/[filename].md
+touch docs/module-4/[filename].md
 
 # Update sidebar configuration
 # Edit sidebars.js to register new chapters
@@ -57,7 +74,7 @@ touch docs/module-2/[filename].md
 
 ## Code Style
 
-- Use clear, educational language appropriate for AI/CS students
+- Use clear, educational language appropriate for AI/CS students with ROS 2 knowledge
 - Include learning objectives at the beginning of each chapter
 - Provide practical exercises with estimated completion times
 - Follow Docusaurus markdown conventions with proper frontmatter
@@ -66,9 +83,12 @@ touch docs/module-2/[filename].md
 
 ## Recent Changes
 
-- Module 2: Added Digital Twin content covering Gazebo Physics, Unity Environments, and Simulated Sensors
-- Created three educational chapters for robotics simulation
+- Module 3: Added AI-Robot Brain content covering Isaac Sim, Isaac ROS, and Nav2 Navigation
+- Created three educational chapters for advanced robotics with NVIDIA Isaac™
 - Integrated content into Docusaurus navigation structure
+- Module 4: Added Vision-Language-Action (VLA) content covering VLA fundamentals, cognitive planning, and autonomous humanoid systems
+- Created three educational chapters for VLA systems with multimodal processing and LLM integration
+- Integrated VLA content into Docusaurus navigation structure
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->
