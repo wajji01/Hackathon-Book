@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Hackathon Book - ROS 2 Robotics Module',
+  title: 'Physical AI & Humanoid Robotics',
   tagline: 'Educational module for teaching ROS 2 concepts to AI/CS students',
   favicon: 'img/favicon.ico',
 
@@ -75,21 +75,21 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Hackathon Book - ROS 2 Module',
+      title: 'Physical AI & Humanoid Robotics',
       logo: {
         alt: 'ROS 2 Robotics Module Logo',
-        src: 'img/logo.svg',
+        src: 'https://png.pngtree.com/png-vector/20250224/ourmid/pngtree-cutting-edge-ai-robotics-merging-technology-with-human-like-intelligence-png-image_15584270.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'ROS 2 Module',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/hackathon-book/book-frontend',
+          href: 'https://github.com/wajji01/Hackathon-Book',
           label: 'GitHub',
           position: 'right',
         },
@@ -138,7 +138,8 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Hackathon Book - ROS 2 Robotics Module. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Wajahat Mustafa - Physical AI & Humanoid Robotics
+. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
